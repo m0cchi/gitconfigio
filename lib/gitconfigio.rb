@@ -48,4 +48,9 @@ module GitConfigIO
     source = generate(source) if source.class == Hash
     File.write(File.expand_path(path),source)
   end
+
+  def self.concat(hash,source = '')
+    source = parse(source) if source.class == String
+    hash.merge! source
+  end
 end
