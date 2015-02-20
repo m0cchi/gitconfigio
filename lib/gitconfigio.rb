@@ -44,4 +44,8 @@ module GitConfigIO
     str
   end
 
+  def self.dump(path,source = '')
+    source = generate(source) if source.class == Hash
+    File.write(File.expand_path(path),source)
+  end
 end
