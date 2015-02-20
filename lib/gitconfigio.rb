@@ -24,4 +24,9 @@ module GitConfigIO
     config
   end
 
+  def self.parse(source)
+    ls = source.split("\n")
+    config = parse_node(ls)
+  end
+
 end
