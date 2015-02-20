@@ -53,4 +53,10 @@ module GitConfigIO
     source = parse(source) if source.class == String
     hash.merge! source
   end
+
+  def self.merge!(path,source = '')
+    config = load(path)
+    concat(config, source)
+    dump(path,config)
+  end
 end
