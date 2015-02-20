@@ -1,3 +1,3 @@
-module Gitconfigio
-  VERSION = "0.0.1"
+module GitConfigIO
+  VERSION = "0.0.2"
 end

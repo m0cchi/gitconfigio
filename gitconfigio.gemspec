@@ -5,7 +5,7 @@ require 'gitconfigio/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "gitconfigio"
-  spec.version       = Gitconfigio::VERSION
+  spec.version       = GitConfigIO::VERSION
   spec.authors       = ["mocchi"]
   spec.email         = ["boom.boom.planet@gmail.com"]
   spec.summary       = %q{gitconfig Input/Output}
