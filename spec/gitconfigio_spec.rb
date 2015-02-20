@@ -15,6 +15,15 @@ describe GitConfigIO do
 [core]
 \tname = mocchi
 EOS
+  color_hash = {
+    'color' => {
+      'ui' => 'auto'
+    }
+  }
+  color_str = <<-EOS
+[color]
+\tui = auto
+EOS
 
   it 'has a version number' do
     expect(GitConfigIO::VERSION).not_to be nil
@@ -36,4 +45,10 @@ EOS
     expect(GitConfigIO::generate(ext)).to eq(code)
   end
 
+  it 'concat method' do
+    g_code = ext.merge color_hash
+    ext_cp = ext.dup
+    GitConfigIO::concat(ext_cp,color_str)
+    expect(ext_cp).to eq(g_code)
+  end
 end
