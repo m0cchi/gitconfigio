@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/mocchit/gitconfigio.png)](https://travis-ci.org/mocchit/gitconfigio)
+[![Code Climate](https://codeclimate.com/github/mocchit/gitconfigio/badges/gpa.svg)](https://codeclimate.com/github/mocchit/gitconfigio)
 # GitConfigIO
 
 gitconfig Input/Output
