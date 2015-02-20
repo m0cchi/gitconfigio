@@ -29,4 +29,8 @@ module GitConfigIO
     config = parse_node(ls)
   end
 
+  def self.load(path)
+    parse(File.read(File.expand_path(path)))
+  end
+
 end
