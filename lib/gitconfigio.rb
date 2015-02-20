@@ -33,4 +33,15 @@ module GitConfigIO
     parse(File.read(File.expand_path(path)))
   end
 
+  def self.generate(hash)
+    str = ''
+    hash.keys.each do |key|
+      str << "[#{key}]\n"
+      hash[key].each do |k,v|
+        str << "\t#{k} = #{v}\n"
+      end
+    end
+    str
+  end
+
 end
