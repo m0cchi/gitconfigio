@@ -1,6 +1,6 @@
 # Gitconfigio
 
-TODO: Write a gem description
+gitconfig Input/Output
 
 ## Installation
 
@@ -19,8 +19,18 @@ Or install it yourself as:
     $ gem install gitconfigio
 
 ## Usage
+```
+require 'gitconfigio'
+# load gitconfig
+conf = GitConfigIO::load('~/.gitconfig')
+# create value
+color = {'diff' => 'auto' , 'ui' => 'auto'}
+# safe merge value
+conf['color'] = color.merge conf['color'] || {}
+# dump file
+GitConfigIO::dump('~/.gitconfig.bak',conf)
+```
 
-TODO: Write usage instructions here
 
 ## Contributing
 
