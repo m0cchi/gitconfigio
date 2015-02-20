@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Gitconfigio::VERSION
   spec.authors       = ["mocchi"]
   spec.email         = ["boom.boom.planet@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{gitconfig Input/Output}
+  spec.description   = %q{gitconfig Input/Output}
+  spec.homepage      = "https://github.com/mocchit/gitconfigio"
   spec.license       = "GPLv3"
 
   spec.files         = `git ls-files -z`.split("\x0")
