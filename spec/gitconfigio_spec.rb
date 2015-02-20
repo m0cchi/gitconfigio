@@ -47,6 +47,8 @@ EOS
 
   it 'concat method' do
     g_code = ext.merge color_hash
-    expect(GitConfigIO::concat(ext,color_str)).to eq(g_code)
+    ext_cp = ext.dup
+    GitConfigIO::concat(ext_cp,color_str)
+    expect(ext_cp).to eq(g_code)
   end
 end
