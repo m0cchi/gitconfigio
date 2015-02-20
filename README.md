@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/mocchit/gitconfigio.png)](https://travis-ci.org/mocchit/gitconfigio)
-# Gitconfigio
+# GitConfigIO
 
 gitconfig Input/Output
 
