@@ -51,7 +51,7 @@ module GitConfigIO
 
   def self.concat(hash,source = '')
     source = parse(source) if source.class == String
-    hash.merge! source
+    hash.merge source
   end
 
   def self.merge!(path,source = '')
