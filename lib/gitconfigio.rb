@@ -68,4 +68,9 @@ module GitConfigIO
     source.delete(subject)
     generate(source)
   end
+
+  def self.delete!(path,subject)
+    config = load(path)
+    dump(path,delete(config,subject))
+  end
 end
