@@ -38,7 +38,18 @@ conf['color'] = color.merge conf['color'] || {}
 # dump file
 GitConfigIO::dump('~/.gitconfig.bak',conf)
 ```
+otherwise
+```
+#!/bin/usr/env ruby
 
+require 'gitconfigio'
+
+GitConfigIO::merge!('~/.gitconfig',<<-EOS)
+[color]
+  ui = true
+  diff = ture
+EOS
+```
 
 ## Contributing
 
