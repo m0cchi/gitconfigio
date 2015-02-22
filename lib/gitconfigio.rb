@@ -54,9 +54,13 @@ module GitConfigIO
     hash.merge source
   end
 
-  def self.merge!(path,source = '')
+  def self.merge(path,source = '')
     config = load(path)
     concat(config, source)
-    dump(path,config)
   end
+
+  def self.merge!(path,source = '')
+    dump(path,merge(path,source))
+  end
+
 end
