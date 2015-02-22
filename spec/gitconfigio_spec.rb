@@ -51,4 +51,8 @@ EOS
     test_data = GitConfigIO::concat(ext_cp,color_str)
     expect(test_data).to eq(g_code)
   end
+
+  it 'delete method' do
+    expect(GitConfigIO::delete(color_hash,'color')).to eq('')
+  end
 end

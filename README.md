@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/mocchit/gitconfigio.svg?branch=master)](https://travis-ci.org/mocchit/gitconfigio)
 [![Code Climate](https://codeclimate.com/github/mocchit/gitconfigio/badges/gpa.svg)](https://codeclimate.com/github/mocchit/gitconfigio)
-
+[![Gem Version](https://badge.fury.io/rb/gitconfigio.svg)](http://badge.fury.io/rb/gitconfigio)
 #### test:
 
 [![Build Status](https://travis-ci.org/mocchit/gitconfigio.svg?branch=test)](https://travis-ci.org/mocchit/gitconfigio)
