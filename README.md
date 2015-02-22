@@ -49,6 +49,14 @@ GitConfigIO::merge!('~/.gitconfig',<<-EOS)
   ui = true
   diff = ture
 EOS
+
+# before:
+# [color]
+#     ui = true
+# after:
+# [color]
+#     ui = true
+#     diff = true
 ```
 
 ## Contributing
