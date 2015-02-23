@@ -55,4 +55,9 @@ EOS
   it 'delete method' do
     expect(GitConfigIO::delete(color_hash,'color')).to eq('')
   end
+
+  it 'write method' do
+    expect(GitConfigIO::write({},color_str)).to eq(color_hash)
+  end
+
 end
