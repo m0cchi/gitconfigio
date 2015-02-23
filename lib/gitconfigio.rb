@@ -1,4 +1,4 @@
-require_relative "gitconfigio/version"
+require_relative 'gitconfigio/version'
 
 module GitConfigIO
 
