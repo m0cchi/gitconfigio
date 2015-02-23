@@ -25,4 +25,19 @@ module GitConfigIO
     dump(path,delete(config,subject))
   end
 
+  def self.write(config,source)
+    config = parse(config) if config.class == String
+    source = parse(source) if source.class == String
+    source.each do |k,v|
+      config[k] = v
+    end
+    config
+  end
+
+  def self.write!(path,source)
+    config = load(config)
+    config = write(config,source)
+    dump(path,config)
+  end
+
 end
