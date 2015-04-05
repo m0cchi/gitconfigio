@@ -4,7 +4,8 @@ require_relative './util'
 module GitConfigIO
 
   def self.parse_value(source)
-    key,value = source.split('=')
+    key,*value = source.split('=')
+    value = value.join('=')
     return key.gsub(/\s/,''),value.sub(/^\s/,'') if key && value
   end
 
